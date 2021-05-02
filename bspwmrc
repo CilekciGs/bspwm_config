@@ -1,14 +1,10 @@
 #! /bin/sh
 
 ## AUTO START
-/home/burak/.config/polybar/launch.sh --cuts  &
-polybar primarybar&
-polybar secondarybar &
+~/.config/polybar/launch.sh --cuts  &
 sxhkd &
-xfce4-panel &
 
-
-feh --bg-fill ~/Pictures/wallpapers/torus.png
+feh --bg-fill ~/Wallpapers/material.png
 picom --no-fading-openclose &
 
 
@@ -27,7 +23,7 @@ bspc rule -a Steam desktop=^6 follow=off focus=off state=floating
 
 bspc rule -a discord desktop=^5 follow=off focus=off
 
-bspc rule -a dota2 desktop=^3 focus=on
+bspc rule -a csgo desktop=^3 focus=on
 
 ## BSPWM CONFIGURATION
 
@@ -35,7 +31,7 @@ bspc config border_width	1
 
 bspc config window_gap		0 
 
-bspc config focused_border_color "#0A84FF"
+bspc config focused_border_color "#404040"
 bspc config normal_border_color "#000000"
 
 bspc config pointer_motion_interval 7ms
@@ -44,7 +40,6 @@ bspc config pointer_motion_interval 7ms
 #bspc config split_ratio          0.52
 #bspc config borderless_monocle   true
 #bspc config gapless_monocle      true
-
 
 
 
